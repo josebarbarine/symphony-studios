@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symphony Studios | Cinematic Excellence</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6d28d9',
+                        secondary: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Hero Section -->
+        <section class="mb-20">
+            <div class="text-center space-y-6">
+                <h1 class="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+                    Symphony Studios
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+                    Transformando narrativas em experiências visuais épicas
+                </p>
+<div class="pt-6">
+                    <a href="#featured" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition duration-300">
+                        Explore Our Work
+                        <i data-feather="arrow-down" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Sobre Nós -->
+        <section class="mb-20 bg-gray-800/50 p-8 rounded-xl">
+            <h2 class="text-3xl font-bold mb-4">Sobre Nós</h2>
+            <p class="text-lg text-gray-300">
+                Na Symphony Studios, não apenas editamos vídeos; orquestramos histórias. Especializados em análise de cultura pop, animação e gaming, unimos precisão técnica com uma visão artística única para prender a atenção do público do primeiro ao último segundo.
+            </p>
+        </section>
+
+        <!-- Nossa Expertise -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-8">Nossa Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-800/50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3 text-accent-gold">Edição Dinâmica</h3>
+                    <p class="text-gray-300">Cortes precisos e ritmo acelerado para retenção máxima em plataformas como YouTube Shorts.</p>
+                </div>
+                <div class="bg-gray-800/50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3 text-accent-gold">Análise de Narrativa</h3>
+                    <p class="text-gray-300">Roteiros profundos sobre animações e teoria de games com abordagem única.</p>
+                </div>
+                <div class="bg-gray-800/50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3 text-accent-gold">Automação Criativa</h3>
+                    <p class="text-gray-300">Uso de tecnologias de ponta para entregas ágeis sem perder a qualidade artística.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Videos -->
+        <section id="featured" class="mb-20">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold flex items-center">
+                    <i data-feather="film" class="mr-3"></i>
+                    Produções em Destaque
+                </h2>
+                <div class="flex space-x-2">
+                    <button class="px-4 py-2 bg-primary rounded-md">Todos</button>
+                    <button class="px-4 py-2 bg-gray-700 rounded-md">Animações</button>
+                    <button class="px-4 py-2 bg-gray-700 rounded-md">Gaming</button>
+                    <button class="px-4 py-2 bg-gray-700 rounded-md">Shorts</button>
+                </div>
+            </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="video-card group">
+                    <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/_pWYgIS_ulY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold group-hover:text-secondary transition">Epic Mountain Journey</h3>
+                    <p class="text-gray-400">Cinematic travel documentary</p>
+                </div>
+                <div class="video-card group">
+                    <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/Qup18mPoYLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold group-hover:text-secondary transition">Urban Exploration</h3>
+                    <p class="text-gray-400">City life through our lens</p>
+                </div>
+                <div class="video-card group">
+                    <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/7lyKvZg_-yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold group-hover:text-secondary transition">Cinematic Portrait</h3>
+                    <p class="text-gray-400">Emotional storytelling</p>
+                </div>
+                <div class="video-card group">
+                    <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/b6MjQ-B01kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="mt-4 text-xl font-semibold group-hover:text-secondary transition">Action Sequence</h3>
+                    <p class="text-gray-400">Heart-pounding moments</p>
+                </div>
+            </div>
+        </section>
+        <!-- Prova Social -->
+        <section class="mb-20 text-center">
+            <div class="bg-gray-800/50 p-8 rounded-xl inline-block">
+                <p class="text-xl text-accent-gold mb-2">+500.000 visualizações geradas em conteúdos de entretenimento</p>
+                <p class="text-lg text-gray-300">Especialista em retenção para o algoritmo do YouTube</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-gradient-to-r from-primary/20 to-secondary/20 p-8 rounded-xl mb-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Pronto para criar algo incrível?</h2>
+                <p class="text-xl text-gray-300 mb-6">Vamos colaborar na sua próxima obra-prima visual</p>
+                <a href="contact.html" class="inline-flex items-center px-8 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition duration-300">
+                    Vamos Orquestrar seu Próximo Projeto
+                    <i data-feather="send" class="ml-2"></i>
+                </a>
+            </div>
+        </section>
+</main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>

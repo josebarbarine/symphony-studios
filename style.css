@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+:root {
+    --bg-dark: #0D0D0D;
+    --bg-gray: #1A1A1A;
+    --accent-gold: #FFD700;
+    --accent-blue: #00F5FF;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'Syncopate', sans-serif;
+}
+.video-card {
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.short-card {
+    transition: transform 0.3s ease;
+}
+
+.short-card:hover {
+    transform: scale(1.02);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6d28d9;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5b21b6;
+}

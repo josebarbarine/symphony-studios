@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symphony Studios | Short Films</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6d28d9',
+                        secondary: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section class="mb-12">
+            <h1 class="text-4xl font-bold mb-2 flex items-center">
+                <i data-feather="zap" class="mr-3"></i>
+                Symphony Shorts
+            </h1>
+            <p class="text-xl text-gray-400">Conteúdo vertical com alta retenção para o algoritmo</p>
+</section>
+
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="short-card group">
+                    <div class="aspect-[9/16] rounded-xl overflow-hidden shadow-lg relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/jAel4ltdlOI" title="YouTube short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="mt-3 text-lg font-semibold group-hover:text-secondary transition">Golden Hour</h3>
+                </div>
+                <div class="short-card group">
+                    <div class="aspect-[9/16] rounded-xl overflow-hidden shadow-lg relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/86DyKQsJLp4" title="YouTube short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="mt-3 text-lg font-semibold group-hover:text-secondary transition">Urban Flow</h3>
+                </div>
+                <div class="short-card group">
+                    <div class="aspect-[9/16] rounded-xl overflow-hidden shadow-lg relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/Ce2dw4qGHCo" title="YouTube short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="mt-3 text-lg font-semibold group-hover:text-secondary transition">Nature's Whisper</h3>
+                </div>
+                <div class="short-card group">
+                    <div class="aspect-[9/16] rounded-xl overflow-hidden shadow-lg relative">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/RRnyf9wgeRk" title="YouTube short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3 class="mt-3 text-lg font-semibold group-hover:text-secondary transition">Street Symphony</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 text-center">
+            <a href="index.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition duration-300">
+                <i data-feather="arrow-left" class="mr-2"></i>
+                Back to Featured
+            </a>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
